@@ -83,4 +83,4 @@ jobs:
           new_branch: "main"
           add: "overlays/*/kustomization.yaml"
           message: New version released ${{ github.sha }}
-          pull: "--rebase --autostash origin ${{ env.BRANCH }}"
+          pull: "--rebase --autostash origin main"
