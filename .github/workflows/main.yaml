@@ -33,23 +33,23 @@ jobs:
       - name: 'Build and push "todo-app"'
         uses: docker/build-push-action@v6
         with:
-          context: ./project/todo-app
-          file: ./project/todo-app/Dockerfile
+          context: ./todo-app
+          file: ./todo-app/Dockerfile
           push: true
           tags: "lucksei/todo-app:${{ env.BRANCH }}-${{ env.GITHUB_SHA }}"
       
       - name: 'Build and push "todo-backend"'
         uses: docker/build-push-action@v6
         with:
-          context: ./project/todo-backend
-          file: ./project/todo-backend/Dockerfile
+          context: ./todo-backend
+          file: ./todo-backend/Dockerfile
           push: true
           tags: "lucksei/todo-backend:${{ env.BRANCH }}-${{ env.GITHUB_SHA }}"
       
       - name: 'Build and push "todo-broadcaster"'
         uses: docker/build-push-action@v6
         with:
-          context: ./project/todo-broadcaster
-          file: ./project/todo-broadcaster/Dockerfile
+          context: ./todo-broadcaster
+          file: ./todo-broadcaster/Dockerfile
           push: true
           tags: "lucksei/todo-broadcaster:${{ env.BRANCH }}-${{ env.GITHUB_SHA }}"
