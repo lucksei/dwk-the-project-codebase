@@ -1,0 +1,17 @@
+@import 'tailwindcss';
+
+h1 {
+  @apply text-gray-800 font-serif text-4xl mb-3 font-semibold underline underline-offset-4;
+}
+
+h2 {
+  @apply text-gray-800 font-serif text-3xl mb-3 font-semibold;
+}
+
+input[type='text'] {
+  @apply px-2 py-1 border border-gray-300 rounded-md focus:outline-none focus:border-violet-500;
+}
+
+button {
+  @apply px-3 py-1 h-max w-max bg-violet-500 text-white rounded-md hover:bg-violet-700 cursor-pointer;
+}
